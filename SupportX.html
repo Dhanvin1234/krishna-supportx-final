@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Passion+One&family=Prosto+One&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Passion+One&family=Prosto+One&family=Roboto+Slab:wght@800&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Oswald:wght@300;400;700&family=Passion+One&family=Paytone+One&family=Prosto+One&family=Roboto+Slab:wght@200;700;800&family=Secular+One&family=Tajawal:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .line{
+        width:100%;
+        height:2px;
+        margin-right:30px;
+    }
+    .logoimg{
+        height:45px;
+        width:200px;
+    }
+    .logo{
+        margin-left: 50px;
+        margin-top: 40px;
+    
+        
+    }
+    .buttons{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight:'BOLD';
+        font-size: 18px;
+        border:none;
+        color:rgb(0, 0, 0);
+        background-color: transparent;
+        margin-right: -30px;
+       border-radius: 100px;
+       height: 55px;
+       width: 90px;
+       margin-left: 31px;
+        
+    }
+    .buttons:hover{
+        background-color: rgb(228, 228, 228);
+
+    }
+    .LS{
+        margin-left: 1000px;
+        margin-top: -50px;
+    }
+    #join{
+        border-color: black;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight:'BOLD';
+        font-size: 18px;
+       
+        color:rgb(0, 0, 0);
+        background-color: transparent;
+        margin-right: 0px;
+       border-radius: 100px;
+       height: 55px;
+       width: 155px;
+       margin-left: 65px;
+
+    }
+    #join:hover{
+        background-color: rgb(228, 228, 228);
+        
+    }
+    .teacher{
+        border-color: transparent;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight:'BOLD';
+        font-size: 18px;
+       
+        color:rgb(255, 255, 255);
+        background-color:black;
+        margin-right: 0px;
+       border-radius: 100px;
+       height: 55px;
+       width: 175px;
+       margin-left: 65px;
+    }
+    .teacher:hover{
+        background-color: rgb(43, 42, 42);
+    }
+    .teacherlogin{
+        margin-left: 200px;
+        margin-top: -60px;
+    }
+    .navbar{
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        background-color: white;
+        margin-top: -20px;
+    }
+    .title{
+        font-family: 'Montserrat', sans-serif;
+                margin-left: 120px;
+                margin-top: 150px;
+                margin-bottom: -100;
+             }
+             .sb{
+            background-color:white;
+               color: rgb(0, 0, 0);
+               margin-left: 40px;
+                 font-family: 'Ubuntu', sans-serif;
+                 font-weight:'BOLD';
+                 font-size: 20px;
+                 border-color: rgb(0, 0, 0);               
+                 height:50px;
+                 width:250px;
+                 margin-top: 30px;
+                 margin-bottom: 200px;
+           }
+    
+           .lb{
+               color:white;
+               background-color: rgb(0, 0, 0);
+               margin-left: 120px ;
+                 font-family: 'Ubuntu', sans-serif;
+                 font-weight:'BOLD';
+                 font-size: 20px;
+                 border:none;
+                 color:rgb(255, 255, 255);
+                 height:50px;
+                 width:250px;
+                 margin-top: 30px;
+                 margin-bottom: -100px;
+                 
+                 
+           }
+           .theline{
+  width:100%;
+  color:rgb(187, 184, 184);
+  border-width: 2px;
+  display: flex;
+  align-self: center;
+}
+.thelinebox{
+  width:100%;
+  
+  display: flex;
+  align-self: center;
+}
+.phyisics{
+    margin-left:120px
+}
+.EMC{
+    height: 350px;
+}
+.Science{
+    margin-left: 800px;
+    margin-top: -500px;
+}
+div.scroll {
+                margin-left: 940px;
+                margin-top: -250px;
+                padding:4px;
+                background-color: rgb(255, 255, 255);
+                width: 500px;
+                height: 300px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                text-align:justify;
+                font-family: 'Raleway', sans-serif;
+                
+            }
+
+            * {
+  box-sizing: border-box;
+}
+h1 {
+  font-weight: normal;
+}
+
+
+
+.note {
+  font-size: 0.8em;
+  color: #8A8A8A;
+  position: relative;
+  margin-top: 4em;
+}
+
+/* Scroller styling */
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 10em;
+}
+.scroller > span {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+  font-weight: bold;
+  
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
+}
+.card{
+    font-family: 'Montserrat', sans-serif;
+                margin-left: 120px;
+                margin-top: 150px;
+                margin-bottom: -100;
+                font-size: 30px;
+}
+.para{
+    background-color: rgb(223, 223, 223);
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    width:600px;
+    height: 200px;
+    border-radius: 20px;
+    margin-left: 600px;
+    margin-top: -200px;
+}
+.in{
+    margin-left: 40px;
+    margin-top: 60px;
+}
+</style>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+        <img class="logoimg" src="Images/Screen Shot 2023-07-13 at 11.47.05 PM.png"/>
+        
+        <div class="LS">
+        <button class="buttons" >LOGIN</button>
+        <button id="join" >JOIN FOR FREE</button>
+        </div>
+        <div class="teacherlogin">
+            <button class="buttons" style="width: 110px;" >ABOUT US</button>
+            <button class="teacher" >TEACHER LOGIN</button>
+
+        </div>
+        <br>
+      
+          
+       
+    </div>
+   
+    
+
+    </div>
+    <header class="grey" style="background-color: rgb(243, 243, 243);">
+        <div><br><h2 class="title" style="color: rgb(0, 0, 0); font-size: 65px; letter-spacing: 2px; font-weight: 100;  ">SUPPORTX</h2>
+            <h2 class="physics" style="font-size: 30px; font-weight: lighter; font-family: 'Ubuntu', sans-serif; margin-top: -10px; margin-left: 120px;"> Physics all day long</h2>
+        <p  ><span style="font-size: 20px; font-weight: lighter; font-family: 'Oswald', sans-serif; margin-top: -10px; margin-left: 120px; ">Mechanics, waves, quantum nything you need, your peers got.</span></p></div>
+        <a href="/signup"><button class="lb">Sign up</button></a>
+          <a href="/login"><button class="sb">Log in</button></a>
+          <div class="Science">
+          <img class="EMC" src="Images/science-removebg-preview.png"/>
+         </div>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+    </header>
+    <footer>
+     
+            <body>
+                <div class="card">
+                  <h1>SUPPORTX       
+                    <div class="scroller">
+                      <span>
+                        CLEARS DOUBTS
+                      
+                      
+                        <br/>
+                        BUILDS BONDS<br/>
+                        MOTIVATES<br/>
+                        IS ENJOYABLE
+                      </span>
+                      
+                    </div>
+                    <div class="para">
+                        <p class="in"><br>
+                            SupportX can facilitate doubt-clearing by connecting <br>
+                            individuals with others who have relevant knowledge and<br>
+                            experiences. Through active engagement, users can ask <br>
+                            questions, receive answers, and engage in discussions,<br>
+                            thereby gaining diverse perspectives and accessing<br>
+                            real-time support to clarify their uncertainties effectively.
+
+                        </p>
+                    </div>
+                 
+            <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+    </footer>
+</body>
+</html>

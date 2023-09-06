@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Oswald:wght@300;400;700&family=Passion+One&family=Paytone+One&family=Prosto+One&family=Roboto+Slab:wght@200;700;800&family=Secular+One&family=Tajawal:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Passion+One&family=Prosto+One&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Passion+One&family=Prosto+One&family=Roboto+Slab:wght@800&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.list-choice{
+  width:400px;
+  margin:1em auto;
+  position: relative;
+  cursor: pointer;  
+}
+.list-choice input[type="radio"]{
+  position:absolute;
+  left:-9999px;
+}
+
+.list-choice-title {
+width: 200px;
+display: block;
+margin-left: -40px;
+margin-left: -15px;
+padding: 0.55em 1em;
+box-sizing: border-box;
+color: #FFF;
+border: 1px transparent;
+border-radius: 50px;
+
+border-radius: 0.2em;
+}
+.list-choice:hover .list-choice-title {
+border-radius:0.2em 0.2em 0 0;
+}
+.list-choice-objects label:nth-last-of-type(1) span{
+  border-radius:0 0 0.2em 0.2em;
+}
+.list-choice input[type="radio"] + span {
+color: #FFF;
+background: #14051E;
+padding: 0.55em 1em;
+display: block;
+text-align: center;
+box-sizing: border-box;
+cursor: pointer;
+width: 170px;
+
+}
+.list-choice-objects {
+position: absolute;
+top: 0;
+padding-top: 2.1em;
+box-sizing: border-box;
+width: 100%;
+overflow: hidden;
+max-height: 0;
+transition: all 250ms ease;
+
+}
+.list-choice:hover .list-choice-objects  input[type="radio"] + span {
+position: relative;
+top: 0;
+transition: all 250ms ease-in-out;
+}
+.list-choice:hover input[type="radio"] + span:hover {
+background:#14051E;
+}
+.list-choice:hover input[type="radio"]:checked + span:hover {
+background:#74D68E;
+}
+.list-choice input[type="radio"]:checked + span {
+background: #74D68E;
+position: absolute;
+top: 0em;
+padding-bottom: 10px;
+
+border-radius: 0.2em;
+}
+.list-choice:hover input[type="radio"]:checked + span {
+border-radius: 0;
+}
+.list-choice:hover .list-choice-objects label:nth-last-of-type(1) input[type="radio"]:checked + span{
+  border-radius:0 0 0.2em 0.2em;
+}
+
+.list-choice:hover .list-choice-objects {
+max-height: 540px;
+}
+
+
+
+        .bigmind{
+  height:70px
+}
+        .navdiv{
+            width: 1450px;
+            height:100px;
+            background-color: #14051E;
+            margin-top: -10px;
+            margin-left: -10px;
+            z-index: 1000;
+            position:fixed;
+            
+            
+        }
+        .logo{
+            height: 90px;
+            width:270px;
+        }
+        .HOME{
+            margin:auto;
+            font-family: 'Montserrat', sans-serif;
+                 
+                 font-size: 23px;
+                 border-color: #43da89;
+                 color:#43da89;
+                 height:50px;
+                 width:110px;
+         
+                 background-color:transparent;
+
+                 border-radius: 100px;
+        }
+        .buttonholder{
+            margin-top: -60px;
+            margin-left: 300px;
+        }
+        .answerqs{
+            margin:auto;
+            font-family: 'Montserrat', sans-serif;
+                 
+                 font-size: 23px;
+                 border: none;
+                 background-color:#43da89;
+                 color: white;
+                 height:50px;
+                 width:300px;
+                 
+         
+                
+
+                 border-radius: 100px;
+
+        }
+        .buttonholder2{
+            margin-top: -53px;
+            margin-left: 470px;
+        }
+        .HOME:hover{
+            
+            background-color: #413b42;
+        }
+        .answerqs:hover{
+            background-color: #89ddb0;;
+        }
+        .icon{
+            height: 70px;
+
+
+        }
+        .iconmover{
+            margin-left: 1350px;
+            margin-top: -60px;
+        }
+        .pnumber{
+            font-family: 'Montserrat', sans-serif;
+                 font-size: 30px;
+                 border: none;
+                 margin-left: 1200px;
+                 margin-top: -50px;
+                 color: white;
+                 
+         
+
+        }
+        
+        .coin{
+            height: 50px;
+            margin-left:1260px;
+           
+            
+        }
+        .coinhold{
+            margin-top: -75px;
+        }
+        .dumbtxt{
+            width: 800px;
+            border: 3px solid #E9F2F5;
+            padding: 50px;
+            height: 400px;
+            margin-bottom: -150px;
+            
+  
+        }
+        .ingif{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        margin-top: 20px;
+        }
+        .askyour{
+        width:220px;
+        height:50px;
+        color:#43da89;
+        background-color: transparent;
+        border-color: #43da89;
+        border-radius: 100px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        border-width: 4px;
+        border:solid #43da89;
+
+        }
+        .skull{
+            margin-top: -90px;
+
+        }
+        .amit{
+        height: 50px;
+        border-radius: 100px;
+        }
+
+        .olay{
+        width: 800px;
+        border: 3px solid #E9F2F5;
+        padding: 50px;
+        margin-top: -120px;
+        margin-bottom: 120px;
+
+        
+        min-height: 150px;
+        max-height: 400px;
+        }
+        .subjectpic{
+        font-family: 'Ubuntu', sans-serif;
+        margin-bottom: -25px;
+        margin-top: 30px;
+        }
+        .answertheq{
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 500px;
+        color: #0e0e0e;
+        background-color: transparent;
+        width: 150px;
+        height:40px;
+        border-color: black;
+        border-radius: 100px;
+        }
+        .profilebox{
+            width: 300px;
+        border: 3px solid #E9F2F5;
+        padding: 50px;
+        height:500px;
+        margin-left: 1002px;
+        margin-top: -507px;
+        font-family: 'Ubuntu', sans-serif;
+        border-radius: 10px;
+        margin-bottom: -150px;
+       
+        
+        font-size: 23px;
+
+        }
+        .subjectbox{
+          margin-top: 60px;
+         
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navdiv">
+            <div class="logoholder">
+                <img class="logo" src="Images/supportxlogo.png"/>
+                
+
+            </div>
+            <div class="buttonholder">
+                <button class="HOME">
+                    HOME
+                </button>
+                
+            </div>
+            <div class="buttonholder2">
+                <button class="answerqs" onclick="fireSweetAlert()"><a href="studentdashboard.html" style="text-decoration: none; color:white;">ANSWER QUESTIONS</a></button>
+            </div>
+            <div class="iconmover">
+                <img class="icon" src="Images/greenicon.webp"/>
+            </div>
+            <div class="points">
+                <p class="pnumber">150</p>
+                <div class="coinhold">
+                <img class="coin" src="Images/bitcoin.png"/>
+                </div>
+                
+                
+            </div>
+
+        </div>
+    </nav>
+    <div class="dumbtxt">
+        <p style="margin-top:100px; font-family: 'Ubuntu', sans-serif; margin-left: 70px; margin-bottom: 40px;">Your Brain's answers </p>
+        <div class=skull>
+        <img class="bigmind" src="IMAGES/brain.jpeg"/>
+        </div>
+        <h1 class="ingif">LET'S SEE WHAT HELPFUL ANSWERS YOU GOT FROM YOUR PEERS!</h1>
+              
+
+
+    </div>
+    <div class="profilebox">
+  <div class="subjectbox">
+<div class="list-choice">
+  <div class="list-choice-title"><p style="background-color: #14051E;">Mathematics</p></div>
+  <div class="list-choice-objects">
+    <label>
+      <input type="radio" name="month"/>                         <span>geometry</span>
+    </label>
+    <label>
+      <input style="z-index: 100;" type="radio" name="month"/>                         <span>equations</span>
+    </label>
+    <label>
+      <input type="radio" name="month"/>                         <span>algebra</span>
+    </label>
+    <label>
+      <input type="radio" name="month"/>                         <span>squares</span>
+    </label>
+    <label>
+      <input type="radio" name="month"/>                         <span>roots</span>
+    </label>
+    <label>
+      <input type="radio" name="month"/>                         <span>addition</span>
+    </label>
+    <label>
+      <input type="radio" name="month"/>                         <span>subtraction</span>
+    </label>
+    <label>
+      <input type="radio" name="month"/>                         <span>multiplication</span>
+    </label>
+    
+    
+    <label>
+      <input type="radio" name="month"/>                         <span>gaitundai</span>
+    </label>
+  </div>
+</div>
+<div class="list-choice" style="margin-left: 172px; margin-top: -122px;" >
+    <div class="list-choice-title" style="margin-top:-10px; z-index: -2; width: 150px;"><p style="background-color: #14051E;">Physics</p></div>
+    <div class="list-choice-objects">
+      <label>
+        <input type="radio" name="month"/>                         <span>mass</span>
+      </label>
+      <label>
+        <input type="radio" name="month"/>                         <span>weight</span>
+      </label>
+      <label>
+        <input type="radio" name="month"/>                         <span>gravity</span>
+      </label>
+      <label>
+        <input type="radio" name="month"/>                         <span>isaac</span>
+      </label>
+      <label>
+        <input type="radio" name="month"/>                         <span>newton</span>
+      </label>
+      <label>
+        <input type="radio" name="month"/>                         <span>albert</span>
+      </label>
+      <label>
+        <input type="radio" name="month"/>                         <span>einstein</span>
+      </label>
+      <label>
+        <input type="radio" name="month"/>                         <span>fatty</span>
+      </label>
+      
+      
+      <label>
+        <input type="radio" name="month"/>                         <span>gaitundai</span>
+      </label>
+    </div>
+  </div>
+  <div style="border: 1px solid #E9F2F5; height: 1px;width:400px; margin-left: -50px;margin-top: 40px;">
+</div>
+    
+
+  </div>
+  <img style="margin-top: 20px;" class="amit" src="IMAGES/amit.png"/>
+  <p style="font-family: 'Ubuntu', sans-serif;margin-left: 70px; margin-bottom: 80px; font-size: 15px; margin-top:-35px;">Krishna Patel</p>
+  <p style="font-family: 'Ubuntu', sans-serif; margin-left: 70px; font-size: 20px; font-family: 'Ubuntu', sans-serif;margin-left: 185px; margin-top: -100px;">7J </p>
+  <div >
+    <p style=" font-family: 'Montserrat', sans-serif; font-size:25px;" >150</p>
+    <div style="margin-top: -62px;margin-left: 50px;">
+    <img style="height: 50px;" src="Images/bitcoin.png"/>
+    <div style="margin-bottom: -600px; margin-left: -60px;"><button style="color: transparent; background-color: transparent;border-color:  transparent; height: 40px; width: 150px; font-size: 16px; font-family: 'Ubuntu', sans-serif; border-radius: 100px;">View Questions</button></div>
+    
+    </div>
+   
+    
+    
+</div>
+
+    </div>
+    <div style="margin-left: 850px; margin-top: -150px;margin-bottom: 79px; ">
+    <p style="font-family: 'Ubuntu', sans-serif; margin-top: 10px; margin-left: 470px; font-size: 20px; font-family: 'Ubuntu', sans-serif;margin-left: 185px; margin-top: -100px;">You are a spectacular helper and <br>have great knowledge about<br> Maths and physics, go on and <br>keep helping more people<br> </p>
+    
+    
+</div>
+<div class="olay">
+    <form method="POST">
+   <img class="amit" src="IMAGES/amit.png"/>
+   <p style="font-family: 'Ubuntu', sans-serif;margin-top: -35px; margin-left: 70px; margin-bottom: 80px;">Dhanvin Patel</p>
+   <p style="font-family: 'Ubuntu', sans-serif;margin-top: -100px; margin-left: 470px; margin-bottom: 80px;">8J </p>
+   <p style="font-family: 'Raleway', sans-serif ;margin-top: -35px; margin-left: 20px; margin-bottom: 40px;">
+    Inorder to solve this sum, first you have to add 3 to the number 4 which is seven and divide it by 16 which is 54 and then finall subtract it and come to a final answer of 93
+   </p>
+   
+   <p class="subjectpic">Mathamatics</p>
+   
+   </form>
+   </div><div class="olay">
+    <form method="POST">
+   <img class="amit" src="IMAGES/amit.png"/>
+   <p style="font-family: 'Ubuntu', sans-serif;margin-top: -35px; margin-left: 70px; margin-bottom: 80px;">Dhanvin Patel</p>
+   <p style="font-family: 'Ubuntu', sans-serif;margin-top: -100px; margin-left: 470px; margin-bottom: 80px;">8J </p>
+   <p style="font-family: 'Raleway', sans-serif ;margin-top: -35px; margin-left: 20px; margin-bottom: 40px;">
+    Inorder to solve this sum, first you have to add 3 to the number 4 which is seven and divide it by 16 which is 54 and then finall subtract it and come to a final answer of 93
+   </p>
+   
+   <p class="subjectpic">Mathamatics</p>
+   
+   </form>
+   </div><div class="olay">
+    <form method="POST">
+   <img class="amit" src="IMAGES/amit.png"/>
+   <p style="font-family: 'Ubuntu', sans-serif;margin-top: -35px; margin-left: 70px; margin-bottom: 80px;">Dhanvin Patel</p>
+   <p style="font-family: 'Ubuntu', sans-serif;margin-top: -100px; margin-left: 470px; margin-bottom: 80px;">8J </p>
+   <p style="font-family: 'Raleway', sans-serif ;margin-top: -35px; margin-left: 20px; margin-bottom: 40px;">
+    Inorder to solve this sum, first you have to add 3 to the number 4 which is seven and divide it by 16 which is 54 and then finall subtract it and come to a final answer of 93
+   </p>
+   
+   <p class="subjectpic">Mathamatics</p>
+   
+   </form>
+   </div><div class="olay">
+    <form method="POST">
+   <img class="amit" src="IMAGES/amit.png"/>
+   <p style="font-family: 'Ubuntu', sans-serif;margin-top: -35px; margin-left: 70px; margin-bottom: 80px;">Dhanvin Patel</p>
+   <p style="font-family: 'Ubuntu', sans-serif;margin-top: -100px; margin-left: 470px; margin-bottom: 80px;">8J </p>
+   <p style="font-family: 'Raleway', sans-serif ;margin-top: -35px; margin-left: 20px; margin-bottom: 40px;">
+    Inorder to solve this sum, first you have to add 3 to the number 4 which is seven and divide it by 16 which is 54 and then finall subtract it and come to a final answer of 93
+   </p>
+   
+   <p class="subjectpic">Mathamatics</p>
+   
+   </form>
+   </div><div class="olay">
+    <form method="POST">
+   <img class="amit" src="IMAGES/amit.png"/>
+   <p style="font-family: 'Ubuntu', sans-serif;margin-top: -35px; margin-left: 70px; margin-bottom: 80px;">Dhanvin Patel</p>
+   <p style="font-family: 'Ubuntu', sans-serif;margin-top: -100px; margin-left: 470px; margin-bottom: 80px;">8J </p>
+   <p style="font-family: 'Raleway', sans-serif ;margin-top: -35px; margin-left: 20px; margin-bottom: 40px;">
+    Inorder to solve this sum, first you have to add 3 to the number 4 which is seven and divide it by 16 which is 54 and then finall subtract it and come to a final answer of 93
+   </p>
+   
+   <p class="subjectpic">Mathamatics</p>
+   
+   </form>
+   </div><div class="olay">
+    <form method="POST">
+   <img class="amit" src="IMAGES/amit.png"/>
+   <p style="font-family: 'Ubuntu', sans-serif;margin-top: -35px; margin-left: 70px; margin-bottom: 80px;">Dhanvin Patel</p>
+   <p style="font-family: 'Ubuntu', sans-serif;margin-top: -100px; margin-left: 470px; margin-bottom: 80px;">8J </p>
+   <p style="font-family: 'Raleway', sans-serif ;margin-top: -35px; margin-left: 20px; margin-bottom: 40px;">
+    Inorder to solve this sum, first you have to add 3 to the number 4 which is seven and divide it by 16 which is 54 and then finall subtract it and come to a final answer of 93
+   </p>
+   
+   <p class="subjectpic">Mathamatics</p>
+   
+   </form>
+   </div><div class="olay">
+    <form method="POST">
+   <img class="amit" src="IMAGES/amit.png"/>
+   <p style="font-family: 'Ubuntu', sans-serif;margin-top: -35px; margin-left: 70px; margin-bottom: 80px;">Dhanvin Patel</p>
+   <p style="font-family: 'Ubuntu', sans-serif;margin-top: -100px; margin-left: 470px; margin-bottom: 80px;">8J </p>
+   <p style="font-family: 'Raleway', sans-serif ;margin-top: -35px; margin-left: 20px; margin-bottom: 40px;">
+    Inorder to solve this sum, first you have to add 3 to the number 4 which is seven and divide it by 16 which is 54 and then finall subtract it and come to a final answer of 93
+   </p>
+   
+   <p class="subjectpic">Mathamatics</p>
+   
+   </form>
+   </div>
+
+
+
+       <script>
+       function fireSweetAlert() {
+        Swal.fire({
+            icon: 'error',
+            title: 'Scroll and Answer',
+            text: 'Answer by clicking answer below questions'
+        })
+       }
+    
+    </script>
+
+    
+</body>
+</html>
